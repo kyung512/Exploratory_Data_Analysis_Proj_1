@@ -5,7 +5,7 @@ data <- read.table(dataFile, header=TRUE, sep=";", stringsAsFactors=FALSE, dec="
 data1 <- data[data$Date %in% c("1/2/2007","2/2/2007") ,]
 
 
-data1$Global <- as.numeric(data1$Global_active_power)
+# data1$Global <- as.numeric(data1$Global_active_power)
 data1$Sub_metering_1 <- as.numeric(data1$Sub_metering_1)
 data1$Sub_metering_2 <- as.numeric(data1$Sub_metering_2)
 data1$Sub_metering_3 <- as.numeric(data1$Sub_metering_3)
